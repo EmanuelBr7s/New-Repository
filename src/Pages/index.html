@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/src/Scripts/script.js" defer></script>
+    <link rel="stylesheet" href="/src/Styles/style.css">
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <form id="formulario" method="post">
+        <div>
+            <label>Calificación:</label><br>
+            <input type="text" id="calificacion" placeholder="Ingresar calificación" required>
+            <button type="button" onclick="limpiar('formulario');">Limpiar campo</button>
+            <br><br>
+            <button type="button" onclick="validar();">Validar</button>
+            <br><br>
+            <p id="as"></p>
+        </div>
+    </form>
+
+    <h1>Ejercicio 2</h1>
+    <form id="form" method="post">
+        <div>
+            <label>Par o Impar:</label><br>
+            <input type="text" id="tip" placeholder="Ingresar número" required>
+            <button type="button" onclick="limpiar('form');">Limpiar campo</button>
+            <br><br>
+            <button type="button" onclick="tipo();">Comprobar</button>
+            <br><br>
+            <p id="s"></p>
+        </div>
+    </form>
+
+    <h1>Ejercicio 3</h1>
+    <form id="ev">
+        <div>
+            <label>Evaluación de descuento</label><br>
+            <input type="text" id="desc" placeholder="Ingresar el monto" required>
+            <br><br>
+            <button type="button" onclick="descuento();">Verificar</button>
+            <br><br>
+            <p id="descuent"></p>
+        </div>
+    </form>
+
+    <h1>Ejercicio 4</h1>
+    <form id="ea">
+        <div>
+            <label>Adivinanza de números</label><br>
+            <input type="text" id="guess" min="1" max="10" placeholder="Ingresa tu número: "><br>
+            <button type="button" onclick="adivinar();">Adivinar</button>
+            <p id="resultado"></p>
+        </div>
+    </form>
+</body>
+</html>
