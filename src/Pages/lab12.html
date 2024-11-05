@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suma y promedio de arreglos</title>
+    <title>Laboratorio de Bucles</title>
     <link rel="stylesheet" href="/src/Styles/lab12.css">
     <script src="/src/Scripts/lab12.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Suma y promedio de arreglos</h1>
+        <h2>Parte 1: Bucle 'for' - Suma de Números</h2>
+        <label>Ingresar números separados por comas (ej: 1,2,3,4,5):</label>
+        <input type="text" id="numArray" placeholder="Ej: 1,2,3,4">
+        <button type="button" onclick="calcular();">Calcular suma</button>
         <p id="arreglo"></p>
-        <p id="resultado"></p> 
-        <button type="button" onclick="calcular();">¡Calcular!</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="container">
+        <h2>Parte 2: Bucle 'while' - Ingrese Números</h2>
+        <p>El programa continuará pidiendo números hasta que ingrese un número negativo.</p>
+        <button onclick="solicitarNumero()">Comenzar</button>
+    </div>
+
+    <div class="container">
+        <h2>Parte 3: Bucle 'do...while' - Verificación de Contraseña</h2>
+        <label>Ingresa la contraseña:</label>
+        <input type="text" id="passwordInput" placeholder="Escribe tu contraseña">
+        <button onclick="checkPassword()">Verificar Contraseña</button>
+        <p id="passwordResult"></p>
     </div>
 </body>
 </html>
